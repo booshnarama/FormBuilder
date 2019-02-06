@@ -52,13 +52,22 @@
             <ul class="nav nav-tabs" id="formtabs">
               <!-- Tab nav -->
             </ul>
-            <form class="form-horizontal" id="components">
+            <!-- <form class="form-horizontal" id="components"> -->
+             <form id="components" method="POST" action="/action.php" accept-charset="UTF-8" enctype="multipart/form-data" novalidate>
+            
+            <input id="json-hidden" type="hidden" name="json" value="">
+                <div class="form-group">
+                       <label>Name</label>
+                       <input type="text" name="name" class="form-control">
+                    </div>
+                <button type="submit" id="save-builder" class="btn btn-success" style="margin: auto;width: 60px;display: block;">Save</button>
               <fieldset>
                 <div class="tab-content">
                   <!-- Tabs of snippets go here -->
                 </div>
               </fieldset>
             </form>
+             
           </div>
         </div>
         <!-- / Components -->
@@ -76,15 +85,14 @@
     </div> <!-- /container -->
 
     <script data-main="assets/builder_v8/main-built.js" src="assets/builder_v8/lib/require.js" ></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-13083321-13', 'minikomi.github.io');
-      ga('send', 'pageview');
-
-    </script>
+    <script type="text/javascript">
+    $(function() {
+        $('#save-builder').on('click', function (e) {
+            e.preventDefault();
+            $('#json-hidden').val(JSON.stringify(window.formModelCollection));
+            $('#components')[0].submit();
+        });
+    });
+</script>
   </body>
 </html>

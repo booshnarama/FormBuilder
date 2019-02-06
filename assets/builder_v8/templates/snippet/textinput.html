@@ -1,0 +1,11 @@
+<div class="row" id="<%- id %>">
+    <div class="col-xs-12 col-sm-4 col-md-6 col-lg-6">
+        <div class="question">
+            <%- label %>
+            <input type="hidden" name="question[<%- id %>][question]" value="<%- label %>">
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+        <input class="custom-input" type="text" name="question[<%- id %>][value]" <% if(placeholder) { %> placeholder="<%- placeholder %>" <% } %> <% if(required) {%> required <% } %>>
+    </div>
+</div>

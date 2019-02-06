@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Text Input",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "textinput"
+      },
+      "label": {
+        "label": "Question",
+        "type": "input",
+        "value": "Question"
+      },
+      "placeholder": {
+        "label": "Placeholder",
+        "type": "input",
+        "value": "placeholder"
+      },
+      "required": {
+        "label": "Required",
+        "type": "checkbox",
+        "value": true
+      }
+    }
+  },
+  {
+    "title": "Yes No Default",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "yesnodefault"
+      },
+      "label_1": {
+        "label": "Question",
+        "type": "input",
+        "value": "Question"
+      },
+      "required": {
+        "label": "Required",
+        "type": "checkbox",
+        "value": true
+      }
+    }
+  },
+  {
+    "title": "Yes No Valid",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "yesnovalid"
+      },
+      "label_1": {
+        "label": "Question",
+        "type": "input",
+        "value": "Agree to"
+      },
+      "required": {
+        "label": "Required",
+        "type": "checkbox",
+        "value": true
+      }
+    }
+  },
+  {
+    "title": "Yes No with dependency",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "yesnowithdependency"
+      },
+      "label_1": {
+        "label": "1 question",
+        "type": "input",
+        "value": "1 question"
+      },
+      "label_2": {
+        "label": "2 question",
+        "type": "input",
+        "value": "2 question"
+      },
+      "required": {
+        "label": "Required",
+        "type": "checkbox",
+        "value": true
+      }
+    }
+  },
+  {
+    "title": "Yes No with dependency radio",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "yesnowithdependencyradio"
+      },
+      "label_1": {
+        "label": "1 question",
+        "type": "input",
+        "value": "1 question"
+      },
+      "label_2": {
+        "label": "2 question",
+        "type": "input",
+        "value": "2 question"
+      },
+      "required": {
+        "label": "Required",
+        "type": "checkbox",
+        "value": true
+      }
+    }
+  },
+  {
+    "title": "Yes No Double",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "yesnodouble"
+      },
+      "label_1": {
+        "label": "Question",
+        "type": "input",
+        "value": "question"
+      },
+      "label_2": {
+        "label": "yes question",
+        "type": "input",
+        "value": "yes question"
+      },
+      "label_3": {
+        "label": "no question",
+        "type": "input",
+        "value": "no question"
+      },
+      "required": {
+        "label": "Required",
+        "type": "checkbox",
+        "value": true
+      }
+    }
+  },
+  {
+    "title": "Triple Yes",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "tripleyes"
+      },
+      "label_1": {
+        "label": "Question",
+        "type": "input",
+        "value": "question"
+      },
+      "label_2": {
+        "label": "1 question",
+        "type": "input",
+        "value": "1 question"
+      },
+      "label_3": {
+        "label": "2 question",
+        "type": "input",
+        "value": "2 question"
+      },
+      "label_4": {
+        "label": "3 question",
+        "type": "input",
+        "value": "3 question"
+      },
+      "required": {
+        "label": "Required",
+        "type": "checkbox",
+        "value": true
+      }
+    }
+  },
+  {
+    "title": "Text Area",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "textarea"
+      },
+      "label": {
+        "label": "Label Text",
+        "type": "input",
+        "value": "Text Area"
+      },
+      "textarea": {
+        "label": "Starting Text",
+        "type": "textarea",
+        "value": "default text"
+      },
+      "required": {
+        "label": "Required",
+        "type": "checkbox",
+        "value": true
+      }
+    }
+  },
+  {
+    "title": "Agree",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "agree"
+      },
+      "label_1": {
+        "label": "Question",
+        "type": "input",
+        "value": "Agree to"
+      },
+      "required": {
+        "label": "Required",
+        "type": "checkbox",
+        "value": true
+      }
+    }
+  },
+  {
+    "title": "Triple Yes 1",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "tripleyes1"
+      },
+      "label_1": {
+        "label": "Question",
+        "type": "input",
+        "value": "question"
+      },
+      "label_2": {
+        "label": "1 question",
+        "type": "input",
+        "value": "1 question"
+      },
+      "label_3": {
+        "label": "2 question",
+        "type": "input",
+        "value": "2 question"
+      },
+      "label_4": {
+        "label": "3 question",
+        "type": "input",
+        "value": "3 question"
+      },
+      "required": {
+        "label": "Required",
+        "type": "checkbox",
+        "value": true
+      }
+    }
+  },
+  {
+    "title": "Yes Error No",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "yeserrorno"
+      },
+      "label_1": {
+        "label": "Question",
+        "type": "input",
+        "value": "question"
+      },
+      "label_2": {
+        "label": "For status",
+        "type": "select",
+        "value": [
+          {
+            "value": "yes",
+            "label": "Yes",
+            "selected": true
+          },
+          {
+            "value": "no",
+            "label": "No",
+            "selected": false
+          }
+        ]
+      },
+      "label_3": {
+        "label": "Error text",
+        "type": "input",
+        "value": "text"
+      },
+      "required": {
+        "label": "Required",
+        "type": "checkbox",
+        "value": true
+      }
+    }
+  },
+  {
+    "title": "Yes TextArea No Error",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "yestextareanoerror"
+      },
+      "label_1": {
+        "label": "1 question",
+        "type": "input",
+        "value": "1 question"
+      },
+      "label_2": {
+        "label": "2 question",
+        "type": "input",
+        "value": "2 question"
+      },
+      "label_3": {
+        "label": "Error text",
+        "type": "input",
+        "value": "text"
+      },
+      "label_4": {
+        "label": "Letters limit",
+        "type": "input",
+        "value": "text"
+      },
+      "required": {
+        "label": "Required",
+        "type": "checkbox",
+        "value": true
+      }
+    }
+  }
+]

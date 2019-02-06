@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-6 col-lg-6">
+        <div class="question">
+            <%- label %>
+            <input type="hidden" name="question[<%- id %>][question]" value="<%- label %>">
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+        <label class="custom-select-cnt active">
+            <select name="question[<%- id %>][value]" <% if(required) {%> required <% } %> class="custom-select">
+                <% _.each(options, function(option) { %>
+                <option><%- option %></option>
+                <% }); %>
+            </select>
+        </label>
+    </div>
+</div>

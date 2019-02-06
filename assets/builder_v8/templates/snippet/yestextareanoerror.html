@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-6 col-lg-6">
+        <div class="question">
+            <%- label_1 %>
+            <input type="hidden" name="question[<%- id %>][question]" value="<%- label_1 %>">
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+        <label class="radio-label">
+            <input data-id="<%- id %>" class="custom-radio radio-trigger" type="radio" data-msgid="<%- id %>-msg" data-banon="no"
+                   name="question[<%- id %>][value]" value="yes" <% if(required) {%> required <% } %>>
+            Yes
+        </label>
+        <label class="radio-label">
+            <input data-id="<%- id %>" class="custom-radio radio-trigger" type="radio" data-msgid="<%- id %>-msg" data-banon="no"
+                   name="question[<%- id %>][value]" value="no" <% if(required) {%> required <% } %>>
+            No
+        </label>
+        <div class="msg" id="<%- id %>-msg" style="display: none;color:red;">
+            <%- label_3 %>
+        </div>
+    </div>
+</div>
+<div class="row dependent-row" id="<%- id %>">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <label class="textarea-label">
+            <%- label_2 %>
+            <input type="hidden" name="question[<%- id %>-1][question]" value="<%- label_2 %>">
+            <!--<textarea name="question[<%- id %>-1][value]" rows="3" <% if(required) {%> required <% } %>></textarea>-->
+            <textarea  <% if(typeof label_4 !== 'undefined' && label_4 !== '' && label_4 !== '0') { %>data-limit="<%- label_4 %>" class="charlimit"<%} %> name="question[<%- id %>-1][value]" rows="3" <% if(required) {%> required <% } %>></textarea>
+        </label>
+    </div>
+</div>
